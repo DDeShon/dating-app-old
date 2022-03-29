@@ -11,7 +11,7 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 15px;
-  background: linear-gradient(45deg, #fe3072, #ff5940);
+  background: linear-gradient(45deg, #0056ff, #ffa900);
   padding: 12px 30px;
   border-radius: 30px;
   border: none;
@@ -19,5 +19,9 @@
 }
 
 .primary-button:hover {
-  background: linear-gradient(260deg, #fe3072, #ff5940);
+  background: linear-gradient(260deg, #0056ff, #ffa900);
+}
+
+body {
+  text-align: center;
 }
