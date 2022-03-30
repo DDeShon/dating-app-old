@@ -1,4 +1,4 @@
-const AuthModal = () => {
+const AuthModal = ({ setShowModal }) => {
   const handleClick = () => {
     setShowModal(false);
   };
