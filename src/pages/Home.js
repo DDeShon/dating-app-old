@@ -1,9 +1,14 @@
 import Nav from "../components/Nav";
+import { useState } from "react";
+
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const authToken = false;
 
   const handleClick = () => {
     console.log("clicked");
+    setShowModal(true);
   };
 
   return (
