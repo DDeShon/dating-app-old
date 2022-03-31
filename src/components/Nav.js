@@ -1,7 +1,7 @@
 import whiteLogo from "../images/Code_Monkey_BW.png"; //placeholder images
 import colorLogo from "../images/Code_Monkey.png";
 
-const Nav = ({ minimal, authToken, setShowModal }) => {
+const Nav = ({ minimal, authToken, setShowModal, showModal }) => {
   const handleClick = () => {
     setShowModal(true);
   };
@@ -12,7 +12,11 @@ const Nav = ({ minimal, authToken, setShowModal }) => {
       </div>
 
       {!authToken && !minimal && (
-        <button className="nav-button" onClick={handleClick}>
+        <button
+          className="nav-button"
+          onClick={handleClick}
+          disabled={showModal}
+        >
           Log In
         </button>
       )}
