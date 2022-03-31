@@ -49,8 +49,10 @@ const AuthModal = ({ setShowModal }) => {
           name="password-check"
           placeholder="Confirm Password"
           required={true}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setConfirmPassword(e.target.value)}
         />
+        <input className="secondary-button" type="submit" />
+        <p>{error}</p>
       </form>
       AUTH MODAL
     </div>
