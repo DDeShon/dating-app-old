@@ -5,10 +5,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Readex Pro", sans-serif;
+  text-align: center;
 }
 
 h2 {
   font-style: italic;
+}
+
+.primary-title {
+  font-size: 90px;
+  color: rgb(255, 255, 255);
 }
 
 .primary-button {
@@ -42,10 +48,6 @@ h2 {
   background-color: rgb(181, 180, 180);
   color: rgb(0, 52, 155);
   border: solid 2px rgb(0, 52, 155);
-}
-
-body {
-  text-align: center;
 }
 
 /*----- Navbar -----*/
@@ -91,9 +93,15 @@ nav .nav-button:disabled {
   );
 }
 
+.home {
+  margin-top: 30vh;
+}
+
 /*----- Auth Modal -----*/
 .auth-modal {
-  /* position: absolute; */
+  position: absolute;
+  left: 0;
+  right: 0;
   top: 175px;
   margin-left: auto;
   margin-right: auto;
