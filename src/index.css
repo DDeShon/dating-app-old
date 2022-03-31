@@ -23,6 +23,7 @@ h2 {
   font-size: 15px;
   background: linear-gradient(45deg, rgb(0, 86, 255), rgb(255, 169, 0));
   padding: 12px 30px;
+  margin-top: 50px;
   border-radius: 30px;
   border: none;
   cursor: pointer;
