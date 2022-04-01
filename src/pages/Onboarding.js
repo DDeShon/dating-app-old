@@ -28,6 +28,7 @@ const OnBoarding = () => {
               value={""}
               onChange={handleChange}
             />
+
             <label>Birthday</label>
             <div className="multi-input-container">
               <input
@@ -58,6 +59,7 @@ const OnBoarding = () => {
                 onChange={handleChange}
               />
             </div>
+
             <label htmlFor="gender">Gender</label>
             <div className="multi-input-container">
               <input
@@ -129,6 +131,9 @@ const OnBoarding = () => {
               value={""}
               onChange={handleChange}
             />
+          </section>
+          <section>
+            <label htmlFor="photo">Profile Photo</label>
           </section>
         </form>
       </div>
