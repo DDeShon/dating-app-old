@@ -61,7 +61,7 @@ const OnBoarding = () => {
             <label htmlFor="gender">Gender</label>
             <div className="multi-input-container">
               <input
-                id="male-gender"
+                id="male-gender-identity"
                 type="radio"
                 name="gender_identity"
                 value="male"
@@ -70,7 +70,7 @@ const OnBoarding = () => {
               />
               <label htmlFor="male-gender">Male</label>
               <input
-                id="female-gender"
+                id="female-gender-identity"
                 type="radio"
                 name="gender_identity"
                 value="female"
@@ -87,6 +87,37 @@ const OnBoarding = () => {
               onChange={handleChange}
               checked={true}
             />
+
+            <label>Show Me</label>
+            <div className="multi-input-container">
+              <input
+                id="male-gender-interest"
+                type="radio"
+                name="gender_interest"
+                value="male"
+                onChange={handleChange}
+                checked={false}
+              />
+              <label htmlFor="male-gender-interest">Male</label>
+              <input
+                id="female-gender-interest"
+                type="radio"
+                name="gender_interest"
+                value="female"
+                onChange={handleChange}
+                checked={true}
+              />
+              <label htmlFor="female-gender-interest">Female</label>
+              <input
+                id="everyone-gender-interest"
+                type="radio"
+                name="gender_interest"
+                value="everyone"
+                onChange={handleChange}
+                checked={false}
+              />
+              <label htmlFor="everyone-gender-interest">Everyone</label>
+            </div>
           </section>
         </form>
       </div>
