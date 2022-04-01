@@ -118,6 +118,17 @@ const OnBoarding = () => {
               />
               <label htmlFor="everyone-gender-interest">Everyone</label>
             </div>
+
+            <label htmlFor="about">About me</label>
+            <input
+              id="about"
+              type="text"
+              name="about"
+              required={true}
+              placeholder="I like long walks.."
+              value={""}
+              onChange={handleChange}
+            />
           </section>
         </form>
       </div>
