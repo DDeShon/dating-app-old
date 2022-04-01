@@ -2,6 +2,14 @@ import { useState } from "react";
 import Nav from "../components/Nav";
 
 const OnBoarding = () => {
+  const handleSubmit = () => {
+    console.log("submitted");
+  };
+
+  const handleChange = () => {
+    console.log("changed");
+  };
+
   return (
     <>
       <Nav minimal={true} setShowModal={() => {}} showModal={false} />
@@ -67,7 +75,7 @@ const OnBoarding = () => {
                 name="gender_identity"
                 value="female"
                 onChange={handleChange}
-                checked={true}
+                checked={false}
               />
               <label htmlFor="female-gender">Female</label>
             </div>
@@ -75,8 +83,7 @@ const OnBoarding = () => {
             <input
               id="show-gender"
               type="checkbox"
-              name="gender_identity"
-              value="female"
+              name="show_gender"
               onChange={handleChange}
               checked={true}
             />
