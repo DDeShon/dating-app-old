@@ -8,7 +8,7 @@ const OnBoarding = () => {
     dob_day: "",
     dob_month: "",
     dob_year: "",
-    show_gender: false,
+    show_gender: "",
     gender_identity: "",
     gender_interest: "",
     email: "",
@@ -23,7 +23,8 @@ const OnBoarding = () => {
 
   const handleChange = (e) => {
     console.log("e", e);
-    const value = e.target.value;
+    const value =
+      e.target.type === "checkbox" ? e.target.checked : e.target.value;
     const name = e.target.name;
 
     setFormData((prevState) => ({
@@ -111,7 +112,7 @@ const OnBoarding = () => {
               type="checkbox"
               name="show_gender"
               onChange={handleChange}
-              checked={true}
+              checked={formData.show_gender}
             />
 
             <label>Show Me</label>
