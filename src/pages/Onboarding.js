@@ -131,9 +131,11 @@ const OnBoarding = () => {
               value={""}
               onChange={handleChange}
             />
+
+            <input type="submit" />
           </section>
           <section>
-            <label htmlFor="photo">Profile Photo</label>
+            <label htmlFor="url">Profile Photo</label>
             <input
               type="url"
               name="url"
