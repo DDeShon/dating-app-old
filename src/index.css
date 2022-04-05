@@ -139,7 +139,7 @@ nav .nav-button:disabled {
 
 .onboarding form {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .onboarding form section {

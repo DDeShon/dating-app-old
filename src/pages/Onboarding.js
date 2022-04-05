@@ -93,7 +93,7 @@ const OnBoarding = () => {
                 name="gender_identity"
                 value="male"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_identity === "male"}
               />
               <label htmlFor="male-gender-identity">Male</label>
               <input
@@ -102,7 +102,7 @@ const OnBoarding = () => {
                 name="gender_identity"
                 value="female"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_identity === "female"}
               />
               <label htmlFor="female-gender-identity">Female</label>
             </div>
@@ -123,7 +123,7 @@ const OnBoarding = () => {
                 name="gender_interest"
                 value="male"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_interest === "male"}
               />
               <label htmlFor="male-gender-interest">Male</label>
               <input
@@ -132,7 +132,7 @@ const OnBoarding = () => {
                 name="gender_interest"
                 value="female"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_interest === "female"}
               />
               <label htmlFor="female-gender-interest">Female</label>
               <input
@@ -141,7 +141,7 @@ const OnBoarding = () => {
                 name="gender_interest"
                 value="everyone"
                 onChange={handleChange}
-                checked={false}
+                checked={formData.gender_interest === "everyone"}
               />
               <label htmlFor="everyone-gender-interest">Everyone</label>
             </div>
