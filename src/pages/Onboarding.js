@@ -9,8 +9,8 @@ const OnBoarding = () => {
     dob_month: "",
     dob_year: "",
     show_gender: false,
-    gender_identity: "male",
-    gender_interest: "female",
+    gender_identity: "",
+    gender_interest: "",
     email: "",
     url: "",
     about: "",
@@ -25,13 +25,14 @@ const OnBoarding = () => {
     console.log("e", e);
     const value = e.target.value;
     const name = e.target.name;
-    console.log("value " + value, "name " + name);
 
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
+
+  console.log(formData);
 
   return (
     <>
@@ -91,9 +92,9 @@ const OnBoarding = () => {
                 name="gender_identity"
                 value="male"
                 onChange={handleChange}
-                checked={true}
+                checked={false}
               />
-              <label htmlFor="male-gender">Male</label>
+              <label htmlFor="male-gender-identity">Male</label>
               <input
                 id="female-gender-identity"
                 type="radio"
@@ -102,7 +103,7 @@ const OnBoarding = () => {
                 onChange={handleChange}
                 checked={false}
               />
-              <label htmlFor="female-gender">Female</label>
+              <label htmlFor="female-gender-identity">Female</label>
             </div>
             <label htmlFor="show-gender">Show Gender on my profile</label>
             <input
@@ -130,7 +131,7 @@ const OnBoarding = () => {
                 name="gender_interest"
                 value="female"
                 onChange={handleChange}
-                checked={true}
+                checked={false}
               />
               <label htmlFor="female-gender-interest">Female</label>
               <input
