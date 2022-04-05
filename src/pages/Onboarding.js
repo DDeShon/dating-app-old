@@ -134,6 +134,14 @@ const OnBoarding = () => {
           </section>
           <section>
             <label htmlFor="photo">Profile Photo</label>
+            <input
+              type="url"
+              name="url"
+              id="url"
+              onChange={handleChange}
+              required={true}
+            />
+            <div className="photo-container"></div>
           </section>
         </form>
       </div>
