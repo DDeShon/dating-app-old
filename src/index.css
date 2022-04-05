@@ -139,7 +139,7 @@ nav .nav-button:disabled {
 
 .onboarding form {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .onboarding form section {
@@ -192,6 +192,7 @@ nav .nav-button:disabled {
 
 .onboarding form input[type="number"] {
   width: 30%;
+  padding: 15px;
 }
 
 .onboarding form input[type="radio"]:checked + label {
