@@ -206,3 +206,9 @@ nav .nav-button:disabled {
 .onboarding form input[type="submit"]:active {
   background-color: rgb(118, 164, 255);
 }
+
+.onboarding form img {
+  width: 100%;
+}
+
+/*----- Dashboard Page -----*/
