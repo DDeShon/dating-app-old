@@ -137,6 +137,10 @@ nav .nav-button:disabled {
 
 /*----- OnBoarding Page -----*/
 
+.onboarding {
+  border-top: solid 2px rgb(219, 219, 219);
+}
+
 .onboarding form {
   display: flex;
   justify-content: space-evenly;
