@@ -216,6 +216,10 @@ nav .nav-button:disabled {
 }
 
 /*----- Dashboard Page -----*/
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+}
 .swipe {
   position: absolute;
 }
