@@ -236,7 +236,7 @@ nav .nav-button:disabled {
   position: absolute;
 }
 
-.card-container {
+.dashboard .card-container {
   width: 400px;
   height: 650px;
 }
