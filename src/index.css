@@ -252,8 +252,15 @@ nav .nav-button:disabled {
 }
 
 .card h3 {
-  position: absolute;
+  margin-top: 0;
+  /* position: absolute;
   bottom: 0;
   margin: 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255); */
+}
+
+.dashboard .swipe-info {
+  position: absolute;
+  bottom: 0;
+  padding: 50px;
 }
