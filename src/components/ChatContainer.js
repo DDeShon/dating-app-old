@@ -1,3 +1,7 @@
+import ChatDisplay from "./ChatDisplay";
+import ChatHeader from "./ChatHeader";
+import MatchesDisplay from "./MatchesDisplay";
+
 const ChatContainer = () => {
   return (
     <div className="chat-container">
