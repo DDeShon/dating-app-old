@@ -1,10 +1,5 @@
 const Chat = () => {
-  return (
-    <>
-      {/* <Chat />
-      <ChatInput />; */}
-    </>
-  );
+  return <div className="chat-display"></div>;
 };
 
 export default Chat;
