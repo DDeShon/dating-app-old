@@ -1,5 +1,5 @@
 const MatchesDisplay = () => {
-  return <div className="matches-display">Matches Display</div>;
+  return <div className="matches-display">Matches</div>;
 };
 
 export default MatchesDisplay;
